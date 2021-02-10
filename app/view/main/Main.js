@@ -69,6 +69,10 @@ Ext.define('Aplikasiku.view.main.Main', {
                     iconCls: 'x-fa fa-cog',
                     handler: 'openViewLink'
                 },
+                {
+                    iconCls: 'x-fa fa-redo',
+                    handler: 'refreshGrid'
+                },
             ],
             columns: [
                 {

@@ -73,9 +73,10 @@ Ext.define('Aplikasiku.view.main.MainController', {
         window.open(url, '_blank');
     },
 
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
-    }
+    refreshGrid: function () {
+        var maingrid = Ext.ComponentQuery.query('#mainGridLink')[0],
+            mainvm = maingrid.getViewModel(),
+            storemain = mainvm.getStore('LinkStore');
+        storemain.load();
+    },
 });
