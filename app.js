@@ -10,7 +10,8 @@ Ext.application({
     requires: [
         // This will automatically load all classes in the Aplikasiku namespace
         // so that application classes do not need to require each other.
-        'Aplikasiku.*'
+        'Aplikasiku.*',
+        'Ext.grid.plugin.*'
     ],
 
     // The name of the initial view to create.

@@ -35,7 +35,9 @@ Ext.define('Aplikasiku.view.main.MainController', {
     },
 
     openViewLink: function () {
-        Ext.create('Aplikasiku.view.link.Link').show();
+        // Ext.require('Aplikasiku.view.link.Link');
+        // Ext.create('Aplikasiku.view.link.Link').show();
+        Ext.widget('linkwindow').show();
     },
 
     openWindow: function (event, target, options) {

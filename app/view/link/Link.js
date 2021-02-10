@@ -1,10 +1,7 @@
 Ext.define('Aplikasiku.view.link.Link', {
     extend: 'Ext.window.Window',
 
-    requires: [
-        'Aplikasiku.view.link.LinkViewModel',
-        'Aplikasiku.view.main.LinkController',
-    ],
+    alias: 'widget.linkwindow',
 
     title: 'Manajemen Link Localhost',
     modal: true,
@@ -29,6 +26,12 @@ Ext.define('Aplikasiku.view.link.Link', {
     	{
             xtype: 'gridpanel',
             itemId: 'gridLink',
+
+            requires: [
+                'Aplikasiku.view.link.LinkViewModel',
+                'Aplikasiku.view.main.LinkController',
+            ],
+    
             flex: 1,
             title: 'Link',
 

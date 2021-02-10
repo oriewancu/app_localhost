@@ -14,6 +14,7 @@ Ext.define('Aplikasiku.view.main.Main', {
         'Ext.window.MessageBox',
 
         'Aplikasiku.view.main.MainController',
+        'Aplikasiku.view.link.Link',
         'Aplikasiku.view.link.LinkViewModel',
     ],
 
