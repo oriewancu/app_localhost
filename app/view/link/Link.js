@@ -17,7 +17,7 @@ Ext.define('Aplikasiku.view.link.Link', {
         beforerender: function(cmp) {
             var grid = Ext.ComponentQuery.query('#gridLink')[0];
             var vm = grid.getViewModel(),
-                store = vm.getStore('LinkStore');
+                store = vm.getStore('LinkStorePaging');
             store.load();
         }
     },
@@ -39,7 +39,7 @@ Ext.define('Aplikasiku.view.link.Link', {
 
             viewModel: { type: 'linkviewmodel' },
             bind: {
-                store: '{LinkStore}'
+                store: '{LinkStorePaging}'
             },
             columns: [
                 {
@@ -128,7 +128,7 @@ Ext.define('Aplikasiku.view.link.Link', {
                 xtype: 'pagingtoolbar',
                 displayInfo: true,
                 bind:{
-                    store: '{LinkStore}'
+                    store: '{LinkStorePaging}'
                 },
             },
         }

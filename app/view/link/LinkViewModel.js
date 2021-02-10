@@ -5,5 +5,14 @@ Ext.define('Aplikasiku.view.link.LinkViewModel', {
         LinkStore: {
             type: 'link'
         },
+        LinkStorePaging: {
+            type: 'link',
+            pageSize: 5,
+            proxy: {
+		        extraParams: {
+		            action: 'readpaging'
+		        },
+		    }
+        },
     }
 });

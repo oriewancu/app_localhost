@@ -172,7 +172,7 @@ Ext.define('Aplikasiku.view.main.LinkController', {
             maingrid = Ext.ComponentQuery.query('#mainGridLink')[0],
             vm = grid.getViewModel(),
             mainvm = maingrid.getViewModel(),
-            store = vm.getStore('LinkStore'),
+            store = vm.getStore('LinkStorePaging'),
             storemain = mainvm.getStore('LinkStore');
         store.load();
         storemain.load();

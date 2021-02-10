@@ -60,9 +60,6 @@ Ext.define('Aplikasiku.view.main.Main', {
             itemId: 'mainGridLink',
             title: 'Localhost',
             flex: 1,
-            // store: {
-            //     type: 'link'
-            // },
             viewModel: { type: 'linkviewmodel' },
             bind: {
                 store: '{LinkStore}'
@@ -88,14 +85,7 @@ Ext.define('Aplikasiku.view.main.Main', {
             ],
             listeners: {
                 select: 'onSelect'
-            },
-            bbar: {
-                xtype: 'pagingtoolbar',
-                displayInfo: true,
-                bind: {
-                    store: '{LinkStore}'
-                },
-            },
+            }
         }
     ]
 });
